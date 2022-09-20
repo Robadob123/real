@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="kamal_icon_white.png" type="image/gif" sizes="16x16">
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="shop.css" />
+    <title>ecommerce Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@300&family=Righteous&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+     
+      <div class="navigation" style="background-color: #669EFF;">
+        <div class="nav-center container d-flex">
+            <div class="logo" > 
+                <a href="index.html"><h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff;">kamal</h1></a>
+                  </div>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="transition: .4s;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link" style="transition: .4s; ">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="about_kamal.html" class="nav-link" style="transition: .4s;">About</a>
+            </li>
+            <li class="nav-item">
+            <a href= mailto:obinharma@gmail.com? subject="HTML link" class="nav-link" style="transition: 0.4s;">Contact</a></li>
+            </li>
+            <li class="icons d-flex">
+            <a class="icon">
+            </a>
+            <div class="icon">
+            </div>
+            <div class="icon">
+            </div>
+            </a>
+          </li>
+          </ul>
+
+          <div class="icons d-flex">
+            <a class="icon">
+            </a>
+            <div class="icon">
+            </div>
+            <div class="icon">
+            </div>
+            </a>
+          </div>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+      
+
+     
+
+
+        
+<!-- ============main-wrapper==== -->
+
+<a href="#">
+  <img src="orange_autumn.jpg" alt="blue" class="main-image">
+ </a>
+     <div class="container_banner">
+         <h1 style="font-size: 74px;"><span>AUTUMN SALE FROM 50%</span></h1>
+         <span class="cen">RABATT PÅ EN REKKE VESKER, RYGGSEKKER OG LOMMEBØKER
+          </span>
+         <a class="button" href="#">Kjøp Nå</a>
+     </div>
+ </div>
+                
+
+                  <style>
+
+
+.main-image {
+    position: relative;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container_banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 66px;
+}
+
+.container h1 span {
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 30px;
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #ffffff;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: .6s;
+}
+
+.button:hover {
+    opacity: .6;
+}
+</style>    
+
+
+                    <div class="col-md-6 py-3">
+                        <div class="right-img">
+                            <img src="img/right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".toggle").click(function() {
+            $(".menu-sec").toggleClass("active");
+        });
+    </script>
+    </header>
+
+
+
+
+
+
+
+    <style>                           
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    overflow-x: hidden;
+    }
+    
+    ul,
+    ol,
+    li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    .body-wrapper {
+    height: 100vh;
+    background: #05060e;
+    }
+    
+    nav.navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    }
+    
+    .menu-sec {
+    width: 100%;
+    padding-left: 96px;
+    }
+    
+    .nav-link-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    ul.nav-ul {
+    display: flex;
+    }
+    
+    a.logo-text {
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    }
+    
+    a.nav-link {
+    color: #a7a7a7;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    }
+    
+    .right-nav a {
+    margin: 0px 15px;
+    padding: 8px 16px;
+    color: #ababab;
+    font-weight: 600;
+    font-size: 13px;
+    }
+    
+    a.main-btn {
+    background: #bd4f01;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px 20px;
+    }
+    
+    .toggle {
+    display: none;
+    }
+    
+    
+    /* =============banner=============/ */
+    
+    
+    .right-img img {
+    width: 100%;
+    }
+    
+    .ban-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    }
+    
+    h1.title span {
+    color: #bd4f01;
+    }
+    
+    h1.title {
+    font-size: 100px;
+    line-height: 84px;
+    }
+    
+    p.sm-title {
+    font-size: 22px;
+    }
+    
+    p.sm-title span {
+    color: #ff6b3d;
+    }
+    
+    .button-sec {
+    align-items: center;
+    margin-top: 50px;
+    }
+    
+    a.show {
+    margin-left: 20px;
+    padding: 7px 20px;
+    border: 2px solid #bd4f01;
+    border-radius: 10px;
+    color: #fff;
+    }
+    
+    .nav-link:hover {
+    color: #bd4f01;
+    }
+    
+    @media screen and (max-width:992px) {
+    .menu-sec {
+    position: fixed;
+    width: 224px;
+    right: -230px;
+    background: #080808e6;
+    height: 100vh;
+    padding: 0;
+    top: 11%;
+    border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .menu-sec.active {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+    }
+    .toggle {
+    display: block;
+    }
+    nav.navigation {
+    justify-content: space-between;
+    }
+    .toggle {
+    font-size: 32px;
+    color: #fff;
+    }
+    h1.title {
+    font-size: 3rem;
+    line-height: initial;
+    }
+    ul.nav-ul {
+    display: block;
+    }
+    .nav-link-menu {
+    display: block;
+    }
+    }
+    
+    @media screen and (max-width:768px) {
+    .body-wrapper {
+    height: auto;
+    }
+    }
+    
+    @media screen and (max-width:600px) {
+    .navigation {
+    padding: 10px;
+    }
+    h1.title {
+    line-height: 43px;
+    }
+    }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <!-- New Arrivals -->
+    <section class="section new-arrival">
+      <div class="title">
+        <h1>Most Sold Products</h1>
+      </div>
+
+      <div class="product-center">
+
+   
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="betterstrainer.jpg" alt="" />
+            </a>
+          </div>
+
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 40px; color: #ffffff; font-weight: 800;">Sink Drain Strainer</span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$200</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+        
+
+    
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="hand_sticker.webp" alt="" />
+            </a>
+          </div>
+
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 40px; color: #ff7070; font-weight: 800;">Thumb Cable Holder</span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$500</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="banana_beewax.webp" alt="" />
+            </a>
+          </div>
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 40px; color: rgb(255, 166, 0); font-weight: 800;
+
+          ">Beeswax Foodwrap
+          </span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="bro_rolls_edited.jpg" alt="" />
+            </a>
+          </div>
+          <span class="discount">40%</span>
+
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 32px; color: rgb(52, 131, 36); font-weight: 800;">Eco-Friendly Dog Bags (8) </span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$900</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+
+        </div>
+      </section>
+
+
+        <section class="section new-arrival">
+          <div class="title">
+            <h1>Other Home Products</h1>
+          </div>
+    
+          <div class="product-center">
+
+     
+  
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="seedsealer.jpg" alt="" />
+            </a>
+          </div>
+          
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 40px; color: rgb(255, 255, 255); font-weight: 800;">Bag Heat Sealer</span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$100</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+
+
+
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="dog_bag_sixteen.jpg" alt="" />
+            </a>
+          </div>
+
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 33px; color: #fff; font-weight: 800;">Eco-Friendly Dog Bags (16)
+          </span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Sonata White Men’s Shirt</a>
+            <h4>$800</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+
+   
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="bird_silikon.jpg" alt="" />
+
+              
+            </a>
+          </div>
+          <span class="discount">40%</span>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+          <span class="" style=" position: absolute; top: 23rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 50px; color: #fff; font-weight: 800;">Bird scraper</span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="grass_container.html">Quis Nostrud Exercitation</a>
+            <h4>$700</h4>
+          </div>
+          <ul class="icons">
+            <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+           </ul>
+        </div>
+        
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="screenshot_nurserybags.jpg" alt="" />
+            </a>
+          </div>
+
+          <span class="" style=" position: absolute; top: 24rem; left: 1rem; padding: 0.5rem 1rem; font-family: 'Poppins', sans-serif; font-size: 33px; color: #ffffff; font-weight: 800;"> Eco-Friendly Planting Bags</span>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$560</h4>
+          </div>
+          <ul class="icons">
+           <a href="productDetails.html"><li><i class="bx bx-search"></i></li></a>
+          </ul>
+        </div>
+      </div>
+
+  
+    </section>
+
+
+    <!-- Promo -->
+
+    <section class="section banner" >
+<div class="left">
+  <h1 style="font-size: 45px; padding: 2rem; ">
+ 1. Vi har fri frakt 🚚
+  </h1>
+
+  <h1 style="font-size: 45px; padding: 2rem;">
+    2. 30 dagers returrett ⬅️
+  </h1>
+
+  <h1 style="font-size: 45px; padding: 2rem;">
+   3. Betal trygt med vipps 💸
+
+  </h1>
+</div>
+<div class="right">
+  <img src="./images/banner.png" alt="">
+</div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Kamal</h4>
+            <ul>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="about_kamal.html">Om Kamal</a></li>
+              <li><a href="product.html">Våre produkter</a></li>
+            
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Privat</h4>
+            <ul>
+              <li><a href="cookies_kamal.html">Cookies</a></li>
+              <li><a href="personvern.html">Personvern</a></li>
+              <li><a href="generelle_vilkår.html">generelle Vilkår</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Produkter</h4>
+            <ul>
+              <li><a href="#">Laptop sekker</a></li>
+              <li><a href="#">Vesker</a></li>
+              <li><a href="#">Sekker</a></li>
+              <li><a href="#">Lommebøker</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/kamal-no-38b976247/" target="_blank"><i class="fab fa-brands fa-linkedin-in"></i></a>
+              <a href="https://no.pinterest.com/123topcontact/_created/" target="_blank"><i class="fab fa-brands fa-pinterest"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100082566453223&sk=friends" target="_blank"><i class="fab fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/kamal_offisiell/" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="logo" > 
+            <h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff">kamal</h1>
+              </div>
+        </div>
+      </div>
+   </footer>
+
+   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+   </style>
+
+
+ 
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="index.js"></script>
+</html>

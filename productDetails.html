@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="kamal_icon_white.png" type="image/gif" sizes="16x16">
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="shop.css" />
+    <title>ecommerce Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@300&family=Righteous&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    </head>
+
+    <header class="header" id="header">
+     
+      <div class="navigation" style="background-color: #669EFF;;">
+        <div class="nav-center container d-flex">
+            <div class="logo" > 
+                <a href="index.html"><h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff;">kamal</h1></a>
+                  </div>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="transition: .4s;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link" style="transition: .4s; ">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="about_kamal.html" class="nav-link" style="transition: .4s;">About</a>
+            </li>
+            <li class="nav-item">
+            <a href= mailto:obinharma@gmail.com? subject="HTML link" class="nav-link" style="transition: 0.4s;">Contact</a></li>
+            </li>
+            <li class="icons d-flex">
+            <a class="icon">
+            </a>
+            <div class="icon">
+            </div>
+            <div class="icon">
+            </div>
+            </a>
+          </li>
+          </ul>
+
+          <div class="icons d-flex">
+            <a class="icon">
+            </a>
+            <div class="icon">
+            </div>
+            <div class="icon">
+            </div>
+            </a>
+          </div>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <style>     
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+      
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    overflow-x: hidden;
+    }
+    
+    ul,
+    ol,
+    li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    .body-wrapper {
+    height: 100vh;
+    background: #05060e;
+    }
+    
+    nav.navigation {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    }
+    
+    .menu-sec {
+    width: 100%;
+    padding-left: 96px;
+    }
+    
+    .nav-link-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    ul.nav-ul {
+    display: flex;
+    }
+    
+    a.logo-text {
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    }
+    
+    a.nav-link {
+    color: #a7a7a7;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    }
+    
+    .right-nav a {
+    margin: 0px 15px;
+    padding: 8px 16px;
+    color: #ababab;
+    font-weight: 600;
+    font-size: 13px;
+    }
+    
+    a.main-btn {
+    background: #bd4f01;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px 20px;
+    }
+    
+    .toggle {
+    display: none;
+    }
+
+    </style>
+
+
+    <!-- Product Details -->
+    <section class="section product-detail">
+      <div class="details container">
+        <div class="left image-container">
+          <div class="main">
+            <img src="./images/product-8.jpg" id="zoom" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <span>Home/T-shirt</span>
+          <h1>Boy’s T-Shirt By Handsome</h1>
+          <div class="price">$50</div>
+     
+      
+          <h3>Product Detail</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima
+            delectus nulla voluptates nesciunt quidem laudantium, quisquam
+            voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!
+          </p>
+
+          
+        </div>
+        <div id="smart-button-container">
+          <div style="text-align: center;">
+            <div style="margin-bottom: 1.25rem;">
+              <p></p>
+              <select id="item-options"><option value="potte" price="20">potte - 20 USD</option></select>
+              <select style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option></select>
+            </div>
+          <div id="paypal-button-container"></div>
+          </div>
+        </div>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <script>
+          function initPayPalButton() {
+            var shipping = 0;
+            var itemOptions = document.querySelector("#smart-button-container #item-options");
+        var quantity = parseInt(30);
+        var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+        if (!isNaN(quantity)) {
+          quantitySelect.style.visibility = "visible";
+        }
+        var orderDescription = '';
+        if(orderDescription === '') {
+          orderDescription = 'Item';
+        }
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+            
+          },
+          createOrder: function(data, actions) {
+            var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+            var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+            var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+            if(quantitySelect.options.length > 0) {
+              quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+            } else {
+              quantity = 1;
+            }
+    
+            tax *= quantity;
+            tax = Math.round(tax * 100) / 100;
+            var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+            priceTotal = Math.round(priceTotal * 100) / 100;
+            var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+    
+            return actions.order.create({
+              purchase_units: [{
+                description: orderDescription,
+                amount: {
+                  currency_code: 'USD',
+                  value: priceTotal,
+                  breakdown: {
+                    item_total: {
+                      currency_code: 'USD',
+                      value: itemTotalValue,
+                    },
+                    shipping: {
+                      currency_code: 'USD',
+                      value: shipping,
+                    },
+                    tax_total: {
+                      currency_code: 'USD',
+                      value: tax,
+                    }
+                  }
+                },
+                items: [{
+                  name: selectedItemDescription,
+                  unit_amount: {
+                    currency_code: 'USD',
+                    value: selectedItemPrice,
+                  },
+                  quantity: quantity
+                }]
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+              
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+    
+              // Show a success message within this page, e.g.
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+    
+              // Or go to another URL:  actions.redirect('thank_you.html');
+    
+            });
+          },
+          onError: function(err) {
+            console.log(err);
+          },
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+        </script>
+
+        
+
+<div class="container mt-5" style="font-size: 16px;">
+  <h1>Contact Me!</h1>
+  <form class="row g-3" action="https://formsubmit.co/obinharma@gmail.com" method="POST">
+    <!-- Honeypot -->
+    <input type="text" name="_honey" style="display: none;">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="hidden" name="_next" value="https://haydn5.github.io/formsubmitdemo/new_next.html" >
+
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="name" id="firstName" required>
+    </div>
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="Last&nbsp;Name" id="lastName" required>
+    </div>
+    <div class="col-md-8">
+      <label for="emailInfo" class="form-label">E-mail</label>
+      <input type="email" class="form-control" style="font-size: 15px;" name="email" id="emailInfo" required>
+    </div>
+    <div class="col-md-4">
+      <label for="phoneNumber" class="form-label">Phone Number</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+    </div>
+    <div class="col-md-6">
+      <label for="phoneNumber" class="form-label">Address</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="address" id="address" required>
+    </div>
+    <div class="col-md-6">
+      <label for="phoneNumber" class="form-label">Apartment, suite, etc.</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="apartment" id="apartment" required>
+    </div>
+    <div class="col-md-8">
+      <label for="phoneNumber" class="form-label">Province</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="province" id="province" placeholder="Please select a State/Province/Region">
+    </div>
+    <div class="col-md-4">
+      <label for="phoneNumber" class="form-label">City</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="city" id="city">
+    </div>
+    <div class="col-md-8">
+      <label for="phoneNumber" class="form-label">Postal code</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="postalCode" id="postalCode">
+    </div>
+
+
+
+    <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
+  
+    <select id="country" name="country" class="form-control">
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Åland Islands">Åland Islands</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="American Samoa">American Samoa</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Anguilla">Anguilla</option>
+        <option value="Antarctica">Antarctica</option>
+        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Aruba">Aruba</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Bouvet Island">Bouvet Island</option>
+        <option value="Brazil">Brazil</option>
+        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+        <option value="Brunei Darussalam">Brunei Darussalam</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Cayman Islands">Cayman Islands</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Christmas Island">Christmas Island</option>
+        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo">Congo</option>
+        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+        <option value="Cook Islands">Cook Islands</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cote D'ivoire">Cote D'ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominica">Dominica</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+        <option value="Faroe Islands">Faroe Islands</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="French Guiana">French Guiana</option>
+        <option value="French Polynesia">French Polynesia</option>
+        <option value="French Southern Territories">French Southern Territories</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gambia">Gambia</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Gibraltar">Gibraltar</option>
+        <option value="Greece">Greece</option>
+        <option value="Greenland">Greenland</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Guadeloupe">Guadeloupe</option>
+        <option value="Guam">Guam</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guernsey">Guernsey</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-bissau">Guinea-bissau</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Isle of Man">Isle of Man</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jersey">Jersey</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+        <option value="Korea, Republic of">Korea, Republic of</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Macao">Macao</option>
+        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Marshall Islands">Marshall Islands</option>
+        <option value="Martinique">Martinique</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mayotte">Mayotte</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+        <option value="Moldova, Republic of">Moldova, Republic of</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Netherlands Antilles">Netherlands Antilles</option>
+        <option value="New Caledonia">New Caledonia</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Niue">Niue</option>
+        <option value="Norfolk Island">Norfolk Island</option>
+        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+        <option value="Panama">Panama</option>
+        <option value="Papua New Guinea">Papua New Guinea</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Pitcairn">Pitcairn</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Reunion">Reunion</option>
+        <option value="Romania">Romania</option>
+        <option value="Russian Federation">Russian Federation</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Helena">Saint Helena</option>
+        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+        <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+        <option value="Samoa">Samoa</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Timor-leste">Timor-leste</option>
+        <option value="Togo">Togo</option>
+        <option value="Tokelau">Tokelau</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+        <option value="Tuvalu">Tuvalu</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Viet Nam">Viet Nam</option>
+        <option value="Virgin Islands, British">Virgin Islands, British</option>
+        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+        <option value="Wallis and Futuna">Wallis and Futuna</option>
+        <option value="Western Sahara">Western Sahara</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+
+
+
+
+    <div class="col-md-12">
+      <label for="comments" class="form-label">Comments, questions?</label>
+      <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+    </div>
+
+
+
+ 
+
+
+
+
+
+    <div class="col-md-12">
+      <button type="submit" class="btn btn-primary" style="width: 80px; height: 42px; font-size: 15.5px;">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+-->
+
+      </div>
+      </section>
+
+
+
+
+
+   
+
+    <!-- Related -->
+   <section class="section new-arrival">
+      <div class="title">
+        <h1>Relaterte Produkter</h1>
+      </div>
+
+      <div class="product-center">
+        <div class="product-item">
+          <div class="overlay">
+            <a href="productDetails.html" class="product-thumb">
+              <img src="buss.jpg" alt="" />
+            </a>
+          </div>
+          <span class="discount">40%</span>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="grass_container.html">Quis Nostrud Exercitation</a>
+            <h4>$700</h4>
+          </div>
+          <ul class="icons">
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="chess.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Sonata White Men’s Shirt</a>
+            <h4>$800</h4>
+          </div>
+          <ul class="icons">
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Concepts Solid Pink Men’s Polo</a>
+            <h4>$150</h4>
+          </div>
+          <ul class="icons">
+          </ul>
+        </div>
+        <div class="product-item">
+          <div class="overlay">
+            <a href="" class="product-thumb">
+              <img src="./images/product-4.jpg" alt="" />
+            </a>
+          </div>
+          <div class="product-info">
+            <span>MEN'S CLOTHES</span>
+            <a href="">Edor do eiusmod tempor</a>
+            <h4>$900</h4>
+          </div>
+          <ul class="icons">
+          </ul>
+        </div>
+       
+       
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Kamal</h4>
+            <ul>
+              <li><a href="index.html">Hjem</a></li>
+              <li><a href="about_kamal.html">Om Kamal</a></li>
+              <li><a href="product.html">Våre produkter</a></li>
+            
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Privat</h4>
+            <ul>
+              <li><a href="cookies_kamal.html">Cookies</a></li>
+              <li><a href="personvern.html">Personvern</a></li>
+              <li><a href="generelle_vilkår.html">generelle Vilkår</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Produkter</h4>
+            <ul>
+              <li><a href="#">Laptop sekker</a></li>
+              <li><a href="#">Vesker</a></li>
+              <li><a href="#">Sekker</a></li>
+              <li><a href="#">Lommebøker</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/kamal-no-38b976247/" target="_blank"><i class="fab fa-brands fa-linkedin-in"></i></a>
+              <a href="https://no.pinterest.com/123topcontact/_created/" target="_blank"><i class="fab fa-brands fa-pinterest"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100082566453223&sk=friends" target="_blank"><i class="fab fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/kamal_offisiell/" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="logo" > 
+            <h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff">kamal</h1>
+              </div>
+        </div>
+      </div>
+   </footer>
+
+   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+   </style>
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="zoomsl.min.js"></script>
+    <script>
+      $(function () {
+        console.log("hello");
+        $("#zoom").imagezoomsl({
+          zoomrange: [4, 4],
+        });
+      });
+    </script>
+
+    
+  </body>
+</html>
