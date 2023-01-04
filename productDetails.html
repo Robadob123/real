@@ -34,7 +34,7 @@
       <div class="navigation" style="background-color: #669EFF;;">
         <div class="nav-center container d-flex">
             <div class="logo" > 
-                <a href="index.html"><h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff;">kamal</h1></a>
+                <a href="index.html"><h1 style="font-family:'Poppins',sans-serif; font-size: 43px; color: #fff; font-weight: 900;">kamal</h1></a>
                   </div>
 
           <ul class="nav-list d-flex">
@@ -172,12 +172,16 @@
       <div class="details container">
         <div class="left image-container">
           <div class="main">
-            <img src="./images/product-8.jpg" id="zoom" alt="" />
+            <img src="soup_cup.jpg" id="zoom" alt="" />
+            
           </div>
         </div>
-        <div class="right">
-          <span>Home/T-shirt</span>
-          <h1>Boy’s T-Shirt By Handsome</h1>
+
+        
+        
+        <div>
+          <span>Home/product</span>
+          <h1>Product</h1>
           <div class="price">$50</div>
      
       
@@ -188,115 +192,121 @@
             voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!
           </p>
 
-          
-        </div>
-        <div id="smart-button-container">
-          <div style="text-align: center;">
-            <div style="margin-bottom: 1.25rem;">
-              <p></p>
-              <select id="item-options"><option value="potte" price="20">potte - 20 USD</option></select>
-              <select style="visibility: hidden" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option></select>
-            </div>
-          <div id="paypal-button-container"></div>
-          </div>
-        </div>
-        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-        <script>
-          function initPayPalButton() {
-            var shipping = 0;
-            var itemOptions = document.querySelector("#smart-button-container #item-options");
-        var quantity = parseInt(30);
-        var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
-        if (!isNaN(quantity)) {
-          quantitySelect.style.visibility = "visible";
-        }
-        var orderDescription = '';
-        if(orderDescription === '') {
-          orderDescription = 'Item';
-        }
-        paypal.Buttons({
-          style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-          },
-          createOrder: function(data, actions) {
-            var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-            var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
-            var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
-            if(quantitySelect.options.length > 0) {
-              quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
-            } else {
-              quantity = 1;
-            }
-    
-            tax *= quantity;
-            tax = Math.round(tax * 100) / 100;
-            var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
-            priceTotal = Math.round(priceTotal * 100) / 100;
-            var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
-    
-            return actions.order.create({
-              purchase_units: [{
-                description: orderDescription,
-                amount: {
-                  currency_code: 'USD',
-                  value: priceTotal,
-                  breakdown: {
-                    item_total: {
-                      currency_code: 'USD',
-                      value: itemTotalValue,
-                    },
-                    shipping: {
-                      currency_code: 'USD',
-                      value: shipping,
-                    },
-                    tax_total: {
-                      currency_code: 'USD',
-                      value: tax,
-                    }
-                  }
-                },
-                items: [{
-                  name: selectedItemDescription,
-                  unit_amount: {
-                    currency_code: 'USD',
-                    value: selectedItemPrice,
-                  },
-                  quantity: quantity
-                }]
-              }]
-            });
-          },
-          onApprove: function(data, actions) {
-            return actions.order.capture().then(function(orderData) {
-              
-              // Full available details
-              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-    
-              // Show a success message within this page, e.g.
-              const element = document.getElementById('paypal-button-container');
-              element.innerHTML = '';
-              element.innerHTML = '<h3>Thank you for your payment!</h3>';
-    
-              // Or go to another URL:  actions.redirect('thank_you.html');
-    
-            });
-          },
-          onError: function(err) {
-            console.log(err);
-          },
-        }).render('#paypal-button-container');
-      }
-      initPayPalButton();
-        </script>
 
-        
+
+          <div class="button-buy">Buy Now</div>
+
+
+          <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div style="margin-bottom: 1.25rem;">
+                <p></p>
+                <select id="item-options" style=" -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; font-size: 15px; "><option value="potte" price="20">potte - 20 USD</option></select>
+                <select style="visibility: hidden; font-size: 15px;" id="quantitySelect"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select>
+              </div>
+            <div id="paypal-button-container"></div>
+            </div>
+          </div>
+          <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+          <script>
+            function initPayPalButton() {
+              var shipping = 0;
+              var itemOptions = document.querySelector("#smart-button-container #item-options");
+          var quantity = parseInt(30);
+          var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+          if (!isNaN(quantity)) {
+            quantitySelect.style.visibility = "visible";
+          }
+          var orderDescription = '';
+          if(orderDescription === '') {
+            orderDescription = 'Item';
+          }
+          paypal.Buttons({
+            style: {
+              shape: 'rect',
+              color: 'gold',
+              layout: 'vertical',
+              label: 'paypal',
+              
+            },
+            createOrder: function(data, actions) {
+              var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+              var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+              var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0)/100));
+              if(quantitySelect.options.length > 0) {
+                quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+              } else {
+                quantity = 1;
+              }
+      
+              tax *= quantity;
+              tax = Math.round(tax * 100) / 100;
+              var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+              priceTotal = Math.round(priceTotal * 100) / 100;
+              var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+      
+              return actions.order.create({
+                purchase_units: [{
+                  description: orderDescription,
+                  amount: {
+                    currency_code: 'USD',
+                    value: priceTotal,
+                    breakdown: {
+                      item_total: {
+                        currency_code: 'USD',
+                        value: itemTotalValue,
+                      },
+                      shipping: {
+                        currency_code: 'USD',
+                        value: shipping,
+                      },
+                      tax_total: {
+                        currency_code: 'USD',
+                        value: tax,
+                      }
+                    }
+                  },
+                  items: [{
+                    name: selectedItemDescription,
+                    unit_amount: {
+                      currency_code: 'USD',
+                      value: selectedItemPrice,
+                    },
+                    quantity: quantity
+                  }]
+                }]
+              });
+            },
+            onApprove: function(data, actions) {
+              return actions.order.capture().then(function(orderData) {
+                
+                // Full available details
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+      
+                // Show a success message within this page, e.g.
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+      
+                // Or go to another URL:  actions.redirect('thank_you.html');
+      
+              });
+            },
+            onError: function(err) {
+              console.log(err);
+            },
+          }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+          </script>
+
+
+
+
+
 
 <div class="container mt-5" style="font-size: 16px;">
-  <h1>Contact Me!</h1>
+  <h1>Shipping Information</h1>
   <form class="row g-3" action="https://formsubmit.co/obinharma@gmail.com" method="POST">
     <!-- Honeypot -->
     <input type="text" name="_honey" style="display: none;">
@@ -304,7 +314,12 @@
     <!-- Disable Captcha -->
     <input type="hidden" name="_captcha" value="false">
 
-    <input type="hidden" name="_next" value="https://haydn5.github.io/formsubmitdemo/new_next.html" >
+    <input type="hidden" name="_next" value="https://robadob123.github.io/formsubmitdemo/new_next.html" >
+
+    <div>
+      <label for="phoneNumber" class="form-label">Product</label>
+      <div type="text" class="form-control" style="font-size: 15px;" name="postalCode" id="postalCode" placeholder="Can vary in which country you are from">Product - Soup Cup</div>
+    </div>
 
     <div class="col-md-6">
       <label for="firstName" class="form-label">First Name</label>
@@ -338,16 +353,19 @@
       <label for="phoneNumber" class="form-label">City</label>
       <input type="text" class="form-control" style="font-size: 15px;" name="city" id="city">
     </div>
-    <div class="col-md-8">
+    <div>
       <label for="phoneNumber" class="form-label">Postal code</label>
-      <input type="text" class="form-control" style="font-size: 15px;" name="postalCode" id="postalCode">
+      <input type="text" class="form-control" style="font-size: 15px;" name="postalCode" id="postalCode" placeholder="Can vary in which country you are from">
+    </div>
+    <div>
+      <label for="phoneNumber" class="form-label">State</label>
+      <input type="text" class="form-control" style="font-size: 15px;" name="postalCode" id="postalCode" placeholder="Can vary in which country you are from">
     </div>
 
 
-
-    <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
+    <label for="country">Country</label>    
   
-    <select id="country" name="country" class="form-control">
+    <select id="country" name="country" class="form-control" style="font-size: 14px;">
         <option value="Afghanistan">Afghanistan</option>
         <option value="Åland Islands">Åland Islands</option>
         <option value="Albania">Albania</option>
@@ -599,7 +617,8 @@
 
     <div class="col-md-12">
       <label for="comments" class="form-label">Comments, questions?</label>
-      <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+      <textarea class="form-control" style="font-size: 15px;" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+
     </div>
 
 
@@ -615,6 +634,17 @@
     </div>
   </form>
 </div>
+
+<p>* Remember to write your shipping information accurately! shipping information will be the location where you live in you current location. When you fill it the information will be sent to us at ... and your products will be shipped directly to you.</p>
+
+
+        </div>
+
+
+
+
+
+
 
 
 
@@ -648,7 +678,7 @@
         <div class="product-item">
           <div class="overlay">
             <a href="productDetails.html" class="product-thumb">
-              <img src="buss.jpg" alt="" />
+              <img src="soup_cup.jpg" alt="" />
             </a>
           </div>
           <span class="discount">40%</span>
